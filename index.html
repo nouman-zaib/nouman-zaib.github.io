@@ -7,45 +7,57 @@
 
 <style>
 body{
-margin:0;
-font-family:Arial;
-background:#0f172a;
-color:white;
-text-align:center;
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#0f172a;
+  color:white;
+  text-align:center;
 }
 
 header{
-padding:80px;
+  padding:80px 20px;
 }
 
 img{
-width:180px;
-border-radius:50%;
-border:5px solid white;
+  width:180px;
+  height:180px;
+  object-fit:cover;
+  border-radius:50%;
+  border:5px solid white;
 }
 
 h1{
-font-size:45px;
-margin-top:20px;
+  font-size:45px;
+  margin-top:20px;
 }
 
 p{
-font-size:20px;
-color:#ddd;
+  font-size:20px;
+  color:#ddd;
 }
 
-a{
-display:inline-block;
-margin-top:30px;
-padding:15px 35px;
-background:#2563eb;
-color:white;
-text-decoration:none;
-border-radius:30px;
+/* Container to center and space all buttons properly */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
-a:hover{
-background:#1d4ed8;
+.btn {
+  display:inline-block;
+  padding:15px 35px;
+  background:#2563eb;
+  color:white;
+  text-decoration:none;
+  border-radius:30px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover{
+  background:#1d4ed8;
 }
 </style>
 
@@ -55,20 +67,26 @@ background:#1d4ed8;
 
 <header>
 
-<img src="https://avatars.githubusercontent.com/nouman-zaib">
+<img src="https://avatars.githubusercontent.com/nouman-zaib" alt="Nouman Zaib">
 
 <h1>Nouman Zaib</h1>
 
 <p>Python Developer | AI/ML Engineer</p>
 
-<a href="https://github.com/nouman-zaib">
-Visit GitHub
-</a>
+<div class="btn-container">
+  <a href="https://github.com/nouman-zaib" target="_blank" class="btn">
+    Visit GitHub
+  </a>
 
-<a href="https://www.linkedin.com/in/nouman-zaib/">
-Visit Linkedin
-</a>
-  
+  <a href="https://www.linkedin.com/in/nouman-zaib/" target="_blank" class="btn">
+    Visit LinkedIn
+  </a>
+
+  <a href="https://nouman-zaib.netlify.app/" target="_blank" class="btn">
+    Visit Portfolio
+  </a>
+</div>
+
 </header>
 
 </body>
