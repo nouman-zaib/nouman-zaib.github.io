@@ -1,0 +1,12 @@
+# robots.txt for nouman-zaib.github.io
+# Allow all search engines to crawl everything
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://nouman-zaib.github.io/sitemap.xml
+
+# Portfolio Links
+# Main Portfolio: https://nouman-zaib.netlify.app/
+# GitHub: https://github.com/nouman-zaib
